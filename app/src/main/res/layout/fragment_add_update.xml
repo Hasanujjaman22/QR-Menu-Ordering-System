@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddUpdateFrag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:background="#E0E0E0"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        tools:context=".MainActivity">
+
+<ImageView
+    android:id="@+id/selectImage"
+android:scaleType="centerCrop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/ic_generate_qr"
+    android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/foodName"
+                android:hint="Enter Food Name"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EC7A7A"
+                android:layout_margin="5dp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/foodPrice"
+                android:hint="Enter Price"
+                android:padding="5dp"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EC7A7A"
+                android:layout_margin="5dp"
+                android:layout_weight="1"/>
+            <CheckBox
+                android:id="@+id/availability"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Available"
+                android:background="#FF6E6E"
+                android:textColor="#000"
+                app:layout_constraintTop_toBottomOf="@+id/numberEditText"
+                app:layout_constraintStart_toStartOf="parent"
+                    android:layout_margin="5dp" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/uploadButton"
+            android:layout_width="match_parent"
+            android:text="Add Food"
+            android:backgroundTint="@color/black"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>
